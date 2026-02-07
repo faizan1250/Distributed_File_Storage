@@ -9,7 +9,6 @@ import (
 
 func main() {
 	onPeer := func(p p2p.Peer) error {
-		p.Close()
 		return nil
 	}
 	tcpOpts := p2p.TCPTransportOpts{
